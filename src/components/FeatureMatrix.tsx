@@ -6,7 +6,7 @@ const features = [
   { name: "Lieferantenvergleich", basic: "Standard", smart: "Erweitert", prime: "Premium" },
   { name: "Integration Bestandslieferanten", basic: "❌", smart: "✅", prime: "✅" },
   { name: "Reporting", basic: "Basis", smart: "Vollständig", prime: "Custom" },
-  { name: "Pacurion als Vertragspartner", basic: "❌", smart: "✅", prime: "✅" },
+  { name: "Supplycarrier als Vertragspartner", basic: "❌", smart: "✅", prime: "✅" },
   { name: "Datentransparenz", basic: "Eingeschränkt", smart: "✅", prime: "✅" },
   { name: "Compliance EUDR / LkSG", basic: "❌", smart: "✅", prime: "✅" },
   { name: "Persönlicher Einkaufsprofi", basic: "❌", smart: "❌", prime: "✅" },
@@ -47,7 +47,7 @@ const FeatureMatrix = () => (
           Alle Funktionen im Detail
         </h2>
         <p className="text-muted-foreground text-lg">
-          Direkter Vergleich der drei Pacurion-Stufen.
+          Direkter Vergleich der drei Supplycarrier-Stufen.
         </p>
       </div>
 

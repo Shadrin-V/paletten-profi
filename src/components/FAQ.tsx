@@ -4,11 +4,11 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     q: "Verliere ich durch die Plattform meine direkten Kundenkontakte?",
-    a: "Nein. Bestandskunden bleiben Ihre Kunden — Pacurion fungiert lediglich als digitales Werkzeug. Sie behalten die volle Kontrolle über Kommunikation, Konditionen und Beziehungen. Neue Kunden gewinnen Sie zusätzlich über unser Netzwerk.",
+    a: "Nein. Bestandskunden bleiben Ihre Kunden — Supplycarrier fungiert lediglich als digitales Werkzeug. Sie behalten die volle Kontrolle über Kommunikation, Konditionen und Beziehungen. Neue Kunden gewinnen Sie zusätzlich über unser Netzwerk.",
   },
   {
     q: "Entsteht Preisdruck durch die Plattform?",
-    a: "Nein. Pacurion ist kein reiner Preisvergleicher. Wir bewerten Angebote ganzheitlich — Qualität, Liefertreue, Zertifizierungen und Service fließen ein. Faire Margen sind die Grundlage stabiler Partnerschaften.",
+    a: "Nein. Supplycarrier ist kein reiner Preisvergleicher. Wir bewerten Angebote ganzheitlich — Qualität, Liefertreue, Zertifizierungen und Service fließen ein. Faire Margen sind die Grundlage stabiler Partnerschaften.",
   },
   {
     q: "Welche Kosten entstehen für mich als Lieferant?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Wie läuft die Zahlungsabwicklung ab?",
-    a: "Pacurion übernimmt die komplette Zahlungsabwicklung. Sie erhalten Ihr Geld pünktlich und garantiert — wir tragen das Bonitätsrisiko des Endkunden. Standardzahlungsziel: 14 Tage nach Lieferung.",
+    a: "Supplycarrier übernimmt die komplette Zahlungsabwicklung. Sie erhalten Ihr Geld pünktlich und garantiert — wir tragen das Bonitätsrisiko des Endkunden. Standardzahlungsziel: 14 Tage nach Lieferung.",
   },
   {
     q: "Wie schnell wird mein Account verifiziert?",

@@ -22,7 +22,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <div>
           <div className="bg-white inline-block rounded-lg px-3 py-2 mb-5">
-            <img src={logo} alt="Pacurion" className="h-7 w-auto" />
+            <img src={logo} alt="Supplycarrier" className="h-7 w-auto" />
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
             Die führende KI-gestützte B2B Plattform für Ladungsträger und Transportverpackungen in Europa.
@@ -56,8 +56,8 @@ const Footer = () => (
             </ul>
             {col.title === "Support" && (
               <div className="mt-6 space-y-2 text-sm text-white/60">
-                <a href="mailto:hallo@pacurion.de" className="flex items-center gap-2 hover:text-forest-light transition-colors">
-                  <Mail className="h-4 w-4" /> hallo@pacurion.de
+                <a href="mailto:hallo@supplycarrier.de" className="flex items-center gap-2 hover:text-forest-light transition-colors">
+                  <Mail className="h-4 w-4" /> hallo@supplycarrier.de
                 </a>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" /> München, Deutschland
@@ -70,7 +70,7 @@ const Footer = () => (
 
       <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="text-xs text-white/50">
-          © {new Date().getFullYear()} Pacurion GmbH. Alle Rechte vorbehalten.
+          © {new Date().getFullYear()} Supplycarrier GmbH. Alle Rechte vorbehalten.
         </div>
         <div className="flex gap-6 text-xs text-white/50">
           <a href="#" className="hover:text-forest-light transition-colors">Datenschutz</a>

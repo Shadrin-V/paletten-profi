@@ -23,7 +23,7 @@ const tiers = [
       "Alle Basic-Funktionen",
       "Integration Ihrer Lieferanten",
       "Vollständiges Reporting",
-      "Pacurion als Vertragspartner",
+      "Supplycarrier als Vertragspartner",
       "Datentransparenz",
     ],
     cta: "Starten",

@@ -9,7 +9,7 @@ const benefits = [
   {
     icon: Handshake,
     title: "Fester Vertragspartner",
-    desc: "Pacurion wird Ihr alleiniger Vertragspartner — eine Rechnung, ein Ansprechpartner, volle Sicherheit.",
+    desc: "Supplycarrier wird Ihr alleiniger Vertragspartner — eine Rechnung, ein Ansprechpartner, volle Sicherheit.",
   },
   {
     icon: TrendingDown,
@@ -39,11 +39,11 @@ interface Props {
   variant?: "buyer" | "supplier";
 }
 
-const Benefits = ({ title = "Ihre Vorteile auf einen Blick", subtitle = "Sechs Gründe, warum führende Unternehmen auf Pacurion setzen.", variant = "buyer" }: Props) => {
+const Benefits = ({ title = "Ihre Vorteile auf einen Blick", subtitle = "Sechs Gründe, warum führende Unternehmen auf Supplycarrier setzen.", variant = "buyer" }: Props) => {
   const supplierBenefits = [
     { icon: Leaf, title: "100% kostenlos", desc: "Keine Listing-Gebühren, keine Provisionen auf Bestandskunden, keine Mindestumsätze." },
     { icon: Network, title: "Neue Märkte", desc: "Erreichen Sie tausende qualifizierte B2B-Einkäufer in 17 europäischen Ländern." },
-    { icon: ShieldCheck, title: "Kein Ausfallrisiko", desc: "Pacurion übernimmt das Bonitätsrisiko — Sie erhalten Ihr Geld pünktlich und garantiert." },
+    { icon: ShieldCheck, title: "Kein Ausfallrisiko", desc: "Supplycarrier übernimmt das Bonitätsrisiko — Sie erhalten Ihr Geld pünktlich und garantiert." },
     { icon: TrendingDown, title: "Geringerer Vertriebsaufwand", desc: "Digitale Anfragen, automatische Angebotserstellung — weniger Telefonate, mehr Abschlüsse." },
     { icon: Handshake, title: "Stabile Partnerschaft", desc: "Langfristige Rahmenverträge und planbare Abnahmemengen statt unsicherer Spot-Geschäfte." },
     { icon: Headphones, title: "Persönlicher Support", desc: "Dedizierter Account Manager hilft beim Onboarding und der Optimierung Ihrer Verkäufe." },

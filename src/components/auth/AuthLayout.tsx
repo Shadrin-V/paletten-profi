@@ -21,7 +21,7 @@ const AuthLayout = ({ children }: Props) => (
     {/* Top bar */}
     <header className="container py-6">
       <Link to="/" className="inline-flex items-center gap-2">
-        <img src={logo} alt="Pacurion" className="h-7 w-auto" />
+        <img src={logo} alt="Supplycarrier" className="h-7 w-auto" />
       </Link>
     </header>
 
@@ -30,7 +30,7 @@ const AuthLayout = ({ children }: Props) => (
     </main>
 
     <footer className="container py-6 text-center text-xs text-muted-foreground">
-      © {new Date().getFullYear()} Pacurion GmbH ·{" "}
+      © {new Date().getFullYear()} Supplycarrier GmbH ·{" "}
       <Link to="/" className="hover:text-forest transition-colors">Datenschutz</Link> ·{" "}
       <Link to="/" className="hover:text-forest transition-colors">Impressum</Link>
     </footer>

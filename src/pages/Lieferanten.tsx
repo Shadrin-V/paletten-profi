@@ -80,7 +80,7 @@ const Lieferanten = () => {
       <SupplierSteps />
       <Benefits
         variant="supplier"
-        title="Ihre Vorteile als Pacurion-Partner"
+        title="Ihre Vorteile als Supplycarrier-Partner"
         subtitle="Sechs gute Gründe, Ihren Vertrieb digital zu erweitern."
       />
       <FAQ />
