@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import logo from "@/assets/logo.svg";
 
@@ -13,11 +14,11 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { label: "Produkte", href: "#produkte" },
-    { label: "Beschaffungslösungen", href: "#loesungen" },
-    { label: "Für Lieferanten", href: "#lieferanten" },
-    { label: "Über uns", href: "#ueber" },
-    { label: "Newsletter", href: "#newsletter" },
+    { label: "Produkte", to: "/#produkte" },
+    { label: "Beschaffungslösungen", to: "/loesungen" },
+    { label: "Für Lieferanten", to: "/lieferanten" },
+    { label: "Über uns", to: "/#ueber" },
+    { label: "Newsletter", to: "/#newsletter" },
   ];
 
   return (
@@ -29,19 +30,19 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex h-18 items-center justify-between py-4">
-        <a href="#" className="flex items-center gap-2 shrink-0">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src={logo} alt="Pacurion" className="h-8 w-auto" />
-        </a>
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
           {links.map((l) => (
-            <a
+            <Link
               key={l.label}
-              href={l.href}
+              to={l.to}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-forest transition-colors rounded-md hover:bg-muted/60"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -70,14 +71,14 @@ const Navbar = () => {
       {mobileOpen && (
         <div className="lg:hidden bg-background border-t border-border px-6 py-4 space-y-2">
           {links.map((l) => (
-            <a
+            <Link
               key={l.label}
-              href={l.href}
+              to={l.to}
               onClick={() => setMobileOpen(false)}
               className="block py-2 text-sm font-medium text-foreground/80"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
           <div className="flex flex-col gap-2 pt-3 border-t border-border">
             <button className="px-4 py-2 text-sm font-semibold rounded-md border-2 border-forest text-forest">
