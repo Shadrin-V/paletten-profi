@@ -12,6 +12,8 @@ import AppLayout from "./components/app/AppLayout.tsx";
 import Dashboard from "./pages/app/Dashboard.tsx";
 import PlaceholderPage from "./pages/app/PlaceholderPage.tsx";
 import Marktplatz from "./pages/app/Marktplatz.tsx";
+import Anfragen from "./pages/app/Anfragen.tsx";
+import Ausschreibungen from "./pages/app/Ausschreibungen.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -34,8 +36,8 @@ const App = () => (
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="marktplatz" element={<Marktplatz />} />
             <Route path="inserate-boerse" element={<PlaceholderPage title="Inseratebörse" description="Aktuelle Inserate aus dem Pacurion-Netzwerk." />} />
-            <Route path="anfragen" element={<PlaceholderPage title="Meine Anfragen" />} />
-            <Route path="ausschreibungen" element={<PlaceholderPage title="Meine Ausschreibungen" />} />
+            <Route path="anfragen" element={<Anfragen />} />
+            <Route path="ausschreibungen" element={<Ausschreibungen />} />
             <Route path="inserate" element={<PlaceholderPage title="Meine Inserate" />} />
             <Route path="angebote/anfragen" element={<PlaceholderPage title="Angebote · Anfragen" />} />
             <Route path="angebote/ausschreibungen" element={<PlaceholderPage title="Angebote · Ausschreibungen" />} />
