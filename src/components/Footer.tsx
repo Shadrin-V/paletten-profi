@@ -22,7 +22,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <div>
           <div className="bg-white inline-block rounded-lg px-3 py-2 mb-5">
-            <img src={logo} alt="Supplycarrier" className="h-7 w-auto" />
+            <img src={logo} alt="Supplycarrier" className="h-11 w-auto" />
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
             Die führende KI-gestützte B2B Plattform für Ladungsträger und Transportverpackungen in Europa.

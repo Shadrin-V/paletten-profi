@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="container flex h-18 items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <img src={logo} alt="Supplycarrier" className="h-8 w-auto" />
+          <img src={logo} alt="Supplycarrier" className="h-12 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
