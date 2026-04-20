@@ -14,6 +14,9 @@ import PlaceholderPage from "./pages/app/PlaceholderPage.tsx";
 import Marktplatz from "./pages/app/Marktplatz.tsx";
 import Anfragen from "./pages/app/Anfragen.tsx";
 import Ausschreibungen from "./pages/app/Ausschreibungen.tsx";
+import AngeboteAnfragen from "./pages/app/AngeboteAnfragen.tsx";
+import Beschaffung from "./pages/app/Beschaffung.tsx";
+import Inserate from "./pages/app/Inserate.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -38,12 +41,12 @@ const App = () => (
             <Route path="inserate-boerse" element={<PlaceholderPage title="Inseratebörse" description="Aktuelle Inserate aus dem Pacurion-Netzwerk." />} />
             <Route path="anfragen" element={<Anfragen />} />
             <Route path="ausschreibungen" element={<Ausschreibungen />} />
-            <Route path="inserate" element={<PlaceholderPage title="Meine Inserate" />} />
-            <Route path="angebote/anfragen" element={<PlaceholderPage title="Angebote · Anfragen" />} />
+            <Route path="inserate" element={<Inserate />} />
+            <Route path="angebote/anfragen" element={<AngeboteAnfragen />} />
             <Route path="angebote/ausschreibungen" element={<PlaceholderPage title="Angebote · Ausschreibungen" />} />
             <Route path="angebote/inserate" element={<PlaceholderPage title="Angebote · Inserate" />} />
             <Route path="auftraege/auslieferungen" element={<PlaceholderPage title="Aufträge · Auslieferungen" />} />
-            <Route path="auftraege/beschaffung" element={<PlaceholderPage title="Aufträge · Beschaffung" />} />
+            <Route path="auftraege/beschaffung" element={<Beschaffung />} />
             <Route path="auftraege/kontrakte" element={<PlaceholderPage title="Aufträge · Kontrakte" />} />
             <Route path="unternehmen/stammdaten" element={<PlaceholderPage title="Stammdaten" />} />
             <Route path="unternehmen/produktvorlagen" element={<PlaceholderPage title="Produktvorlagen" />} />
