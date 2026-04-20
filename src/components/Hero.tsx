@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Check, LayoutDashboard, Store, FileText, TrendingUp, Package } from "lucide-react";
 
 const DashboardMockup = () => (
@@ -130,13 +131,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
-            <button className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-cta text-cta-foreground font-semibold shadow-cta hover:shadow-float hover:-translate-y-0.5 transition-all">
+            <Link to="/auth/register" className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-cta text-cta-foreground font-semibold shadow-cta hover:shadow-float hover:-translate-y-0.5 transition-all">
               Kostenlos starten
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg border-2 border-forest text-forest font-semibold hover:bg-forest hover:text-white transition-all">
+            </Link>
+            <Link to="/auth/register" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg border-2 border-forest text-forest font-semibold hover:bg-forest hover:text-white transition-all">
               Demo buchen
-            </button>
+            </Link>
           </div>
 
           <div className="flex flex-wrap gap-x-6 gap-y-2">

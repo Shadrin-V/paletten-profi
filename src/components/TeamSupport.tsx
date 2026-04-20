@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MessageCircle, Mail, ArrowRight } from "lucide-react";
 
 const team = [
@@ -76,10 +77,10 @@ const TeamSupport = () => (
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <button className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-cta text-white text-base font-semibold hover:bg-forest transition-all shadow-cta group">
+        <Link to="/auth/register" className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-cta text-white text-base font-semibold hover:bg-forest transition-all shadow-cta group">
           Demo buchen
           <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-        </button>
+        </Link>
       </div>
     </div>
   </section>

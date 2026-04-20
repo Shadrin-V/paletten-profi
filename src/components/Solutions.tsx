@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Check, ArrowRight } from "lucide-react";
 
 const tiers = [

@@ -51,12 +51,12 @@ const Navbar = () => {
             <Globe className="h-4 w-4" />
             DE
           </button>
-          <button className="px-4 py-2 text-sm font-semibold rounded-md border-2 border-forest text-forest hover:bg-forest hover:text-white transition-all">
+          <Link to="/auth/register" className="px-4 py-2 text-sm font-semibold rounded-md border-2 border-forest text-forest hover:bg-forest hover:text-white transition-all">
             Demo buchen
-          </button>
-          <button className="px-4 py-2 text-sm font-semibold rounded-md bg-cta text-cta-foreground hover:bg-forest transition-all shadow-cta">
+          </Link>
+          <Link to="/auth/login" className="px-4 py-2 text-sm font-semibold rounded-md bg-cta text-cta-foreground hover:bg-forest transition-all shadow-cta">
             Anmelden
-          </button>
+          </Link>
         </div>
 
         <button
@@ -81,12 +81,12 @@ const Navbar = () => {
             </Link>
           ))}
           <div className="flex flex-col gap-2 pt-3 border-t border-border">
-            <button className="px-4 py-2 text-sm font-semibold rounded-md border-2 border-forest text-forest">
+            <Link to="/auth/register" onClick={() => setMobileOpen(false)} className="px-4 py-2 text-sm font-semibold rounded-md border-2 border-forest text-forest text-center">
               Demo buchen
-            </button>
-            <button className="px-4 py-2 text-sm font-semibold rounded-md bg-cta text-cta-foreground">
+            </Link>
+            <Link to="/auth/login" onClick={() => setMobileOpen(false)} className="px-4 py-2 text-sm font-semibold rounded-md bg-cta text-cta-foreground text-center">
               Anmelden
-            </button>
+            </Link>
           </div>
         </div>
       )}
