@@ -8,7 +8,9 @@ import Loesungen from "./pages/Loesungen.tsx";
 import Lieferanten from "./pages/Lieferanten.tsx";
 import Login from "./pages/auth/Login.tsx";
 import Register from "./pages/auth/Register.tsx";
+import AppLayout from "./components/app/AppLayout.tsx";
 import Dashboard from "./pages/app/Dashboard.tsx";
+import PlaceholderPage from "./pages/app/PlaceholderPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -25,7 +27,31 @@ const App = () => (
           <Route path="/lieferanten" element={<Lieferanten />} />
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
-          <Route path="/app/dashboard" element={<Dashboard />} />
+
+          <Route path="/app" element={<AppLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="marktplatz" element={<PlaceholderPage title="Marktplatz" description="Durchsuchen Sie Angebote von 600+ Lieferanten in Echtzeit." />} />
+            <Route path="inserate-boerse" element={<PlaceholderPage title="Inseratebörse" description="Aktuelle Inserate aus dem Pacurion-Netzwerk." />} />
+            <Route path="anfragen" element={<PlaceholderPage title="Meine Anfragen" />} />
+            <Route path="ausschreibungen" element={<PlaceholderPage title="Meine Ausschreibungen" />} />
+            <Route path="inserate" element={<PlaceholderPage title="Meine Inserate" />} />
+            <Route path="angebote/anfragen" element={<PlaceholderPage title="Angebote · Anfragen" />} />
+            <Route path="angebote/ausschreibungen" element={<PlaceholderPage title="Angebote · Ausschreibungen" />} />
+            <Route path="angebote/inserate" element={<PlaceholderPage title="Angebote · Inserate" />} />
+            <Route path="auftraege/auslieferungen" element={<PlaceholderPage title="Aufträge · Auslieferungen" />} />
+            <Route path="auftraege/beschaffung" element={<PlaceholderPage title="Aufträge · Beschaffung" />} />
+            <Route path="auftraege/kontrakte" element={<PlaceholderPage title="Aufträge · Kontrakte" />} />
+            <Route path="unternehmen/stammdaten" element={<PlaceholderPage title="Stammdaten" />} />
+            <Route path="unternehmen/produktvorlagen" element={<PlaceholderPage title="Produktvorlagen" />} />
+            <Route path="unternehmen/angebotsservices" element={<PlaceholderPage title="Angebotsservices" />} />
+            <Route path="unternehmen/communities" element={<PlaceholderPage title="Communities" />} />
+            <Route path="unternehmen/reporting" element={<PlaceholderPage title="Reporting" />} />
+            <Route path="unternehmen/mail" element={<PlaceholderPage title="Mail-Einstellungen" />} />
+            <Route path="unternehmen/benutzer" element={<PlaceholderPage title="Benutzer" />} />
+            <Route path="unternehmen/dokumente" element={<PlaceholderPage title="Dokumente" />} />
+          </Route>
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
