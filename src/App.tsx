@@ -17,6 +17,9 @@ import Ausschreibungen from "./pages/app/Ausschreibungen.tsx";
 import AngeboteAnfragen from "./pages/app/AngeboteAnfragen.tsx";
 import Beschaffung from "./pages/app/Beschaffung.tsx";
 import Inserate from "./pages/app/Inserate.tsx";
+import Stammdaten from "./pages/app/Stammdaten.tsx";
+import Reporting from "./pages/app/Reporting.tsx";
+import MailEinstellungen from "./pages/app/MailEinstellungen.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -48,12 +51,12 @@ const App = () => (
             <Route path="auftraege/auslieferungen" element={<PlaceholderPage title="Aufträge · Auslieferungen" />} />
             <Route path="auftraege/beschaffung" element={<Beschaffung />} />
             <Route path="auftraege/kontrakte" element={<PlaceholderPage title="Aufträge · Kontrakte" />} />
-            <Route path="unternehmen/stammdaten" element={<PlaceholderPage title="Stammdaten" />} />
+            <Route path="unternehmen/stammdaten" element={<Stammdaten />} />
             <Route path="unternehmen/produktvorlagen" element={<PlaceholderPage title="Produktvorlagen" />} />
             <Route path="unternehmen/angebotsservices" element={<PlaceholderPage title="Angebotsservices" />} />
             <Route path="unternehmen/communities" element={<PlaceholderPage title="Communities" />} />
-            <Route path="unternehmen/reporting" element={<PlaceholderPage title="Reporting" />} />
-            <Route path="unternehmen/mail" element={<PlaceholderPage title="Mail-Einstellungen" />} />
+            <Route path="unternehmen/reporting" element={<Reporting />} />
+            <Route path="unternehmen/mail" element={<MailEinstellungen />} />
             <Route path="unternehmen/benutzer" element={<PlaceholderPage title="Benutzer" />} />
             <Route path="unternehmen/dokumente" element={<PlaceholderPage title="Dokumente" />} />
           </Route>
