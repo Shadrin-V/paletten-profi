@@ -41,7 +41,7 @@ const App = () => (
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="marktplatz" element={<Marktplatz />} />
-            <Route path="inserate-boerse" element={<PlaceholderPage title="Inseratebörse" description="Aktuelle Inserate aus dem Pacurion-Netzwerk." />} />
+            <Route path="inserate-boerse" element={<PlaceholderPage title="Inseratebörse" description="Aktuelle Inserate aus dem Supplycarrier-Netzwerk." />} />
             <Route path="anfragen" element={<Anfragen />} />
             <Route path="ausschreibungen" element={<Ausschreibungen />} />
             <Route path="inserate" element={<Inserate />} />

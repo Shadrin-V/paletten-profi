@@ -65,8 +65,8 @@ const Register = () => {
     }
     setLoading(provider);
     setTimeout(() => {
-      mockAuth.signIn(email || "demo@pacurion.de", role);
-      toast.success("Willkommen bei Pacurion! Ihr Konto wurde erstellt.");
+      mockAuth.signIn(email || "demo@supplycarrier.de", role);
+      toast.success("Willkommen bei Supplycarrier! Ihr Konto wurde erstellt.");
       navigate("/app/dashboard");
     }, 1500);
   };

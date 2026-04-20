@@ -18,8 +18,8 @@ const Login = () => {
     setLoading(provider);
     setTimeout(() => {
       const role = mockAuth.getUser()?.role ?? "buyer";
-      mockAuth.signIn(email || "demo@pacurion.de", role);
-      toast.success("Willkommen zurück bei Pacurion!");
+      mockAuth.signIn(email || "demo@supplycarrier.de", role);
+      toast.success("Willkommen zurück bei Supplycarrier!");
       navigate("/app/dashboard");
     }, 1500);
   };

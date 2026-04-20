@@ -37,7 +37,7 @@ const Loesungen = () => {
       <SavingsCalculator />
       <Solutions />
       <FeatureMatrix />
-      <Benefits title="Warum Pacurion?" subtitle="Sechs Gründe, warum führende Unternehmen auf unsere Plattform setzen." />
+      <Benefits title="Warum Supplycarrier?" subtitle="Sechs Gründe, warum führende Unternehmen auf unsere Plattform setzen." />
       <Newsletter />
       <Footer />
     </main>

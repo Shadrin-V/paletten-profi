@@ -106,7 +106,7 @@ const Marktplatz = () => {
         <div className="m-4 mb-3 flex items-start gap-3 rounded-lg bg-[#EAF3F4] border border-[#CFE3E5] px-4 py-3">
           <Info className="h-5 w-5 text-[#3A7E86] shrink-0 mt-0.5" strokeWidth={2} />
           <p className="text-[13px] leading-relaxed text-[#2C4F52]">
-            Hier sehen Sie alle Anfragen und Ausschreibungen von Pacurion-Partnern.
+            Hier sehen Sie alle Anfragen und Ausschreibungen von Supplycarrier-Partnern.
             Interessieren Sie sich für eine Anfrage oder Ausschreibung, so klicken Sie
             auf das +-Symbol und geben ein Angebot ab.
           </p>
@@ -229,7 +229,7 @@ const Marktplatz = () => {
                   closeButton={false}
                   minWidth={280}
                   maxWidth={300}
-                  className="pacurion-popup"
+                  className="supplycarrier-popup"
                 >
                   <PopupCard rfq={rfq} onClose={() => popupRefs.current[rfq.id]?.close()} />
                 </Popup>

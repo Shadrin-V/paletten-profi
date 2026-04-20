@@ -8,7 +8,7 @@ export interface MockUser {
   createdAt: string;
 }
 
-const KEY = "pacurion_auth";
+const KEY = "supplycarrier_auth";
 
 export const mockAuth = {
   signIn(email: string, role: UserRole = "buyer"): MockUser {

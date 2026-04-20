@@ -17,7 +17,7 @@ const DashboardMockup = () => (
           <span className="h-3 w-3 rounded-full bg-yellow-400" />
           <span className="h-3 w-3 rounded-full bg-green-400" />
         </div>
-        <div className="ml-3 text-[10px] text-muted-foreground font-medium">app.pacurion.de/dashboard</div>
+        <div className="ml-3 text-[10px] text-muted-foreground font-medium">app.supplycarrier.de/dashboard</div>
       </div>
 
       <div className="flex">

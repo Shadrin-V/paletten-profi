@@ -14,7 +14,7 @@ const steps = [
   {
     icon: PackageCheck,
     title: "Aufträge erhalten",
-    desc: "Sichere Zahlung über Pacurion, kein Ausfallrisiko. Wir übernehmen Bonitätsprüfung und Inkasso — Sie liefern und werden bezahlt.",
+    desc: "Sichere Zahlung über Supplycarrier, kein Ausfallrisiko. Wir übernehmen Bonitätsprüfung und Inkasso — Sie liefern und werden bezahlt.",
   },
 ];
 

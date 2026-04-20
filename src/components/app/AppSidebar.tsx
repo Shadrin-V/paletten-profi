@@ -81,7 +81,7 @@ const AppSidebar = ({ collapsed, onToggle }: Props) => {
       {/* Top: brand */}
       <div className="relative px-4 py-4 border-b border-[#E8EEE9]">
         <Link to="/app/dashboard" className="flex items-center gap-2.5">
-          <img src={logo} alt="Pacurion" className="h-7 w-auto shrink-0" />
+          <img src={logo} alt="Supplycarrier" className="h-7 w-auto shrink-0" />
           {!collapsed && (
             <div className="min-w-0">
               <div className="text-[11px] text-muted-foreground truncate font-medium">
