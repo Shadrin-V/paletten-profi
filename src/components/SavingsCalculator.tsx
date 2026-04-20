@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight, Calculator } from "lucide-react";
 
 const fmt = (n: number) =>
@@ -126,10 +127,10 @@ const SavingsCalculator = () => {
                 <div className="text-xs text-white/60 mt-2">pro Jahr</div>
               </div>
 
-              <button className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white text-forest-deep font-semibold hover:bg-forest-light hover:text-white transition-all shadow-lg group">
+              <Link to="/auth/register" className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white text-forest-deep font-semibold hover:bg-forest-light hover:text-white transition-all shadow-lg group">
                 Jetzt berechnen lassen
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

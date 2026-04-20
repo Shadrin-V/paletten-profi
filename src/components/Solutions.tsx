@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Check, ArrowRight } from "lucide-react";
 
 const tiers = [
@@ -94,7 +95,8 @@ const Card = ({ tier }: { tier: typeof tiers[number] }) => {
         ))}
       </ul>
 
-      <button
+      <Link
+        to="/auth/register"
         className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg font-semibold transition-all group ${
           isPrime
             ? "bg-white text-forest-deep hover:bg-forest-light hover:text-white"
@@ -105,7 +107,7 @@ const Card = ({ tier }: { tier: typeof tiers[number] }) => {
       >
         {tier.cta}
         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-      </button>
+      </Link>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Building2, Briefcase } from "lucide-react";
 
 const SupplierCTA = () => (
@@ -17,10 +18,10 @@ const SupplierCTA = () => (
             <p className="text-white/80 text-lg mb-8 leading-relaxed">
               Erreichen Sie tausende Einkäufer — kostenlos, digital, sicher.
             </p>
-            <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-white text-forest-deep font-semibold hover:bg-forest-light hover:text-white transition-all group/btn">
+            <Link to="/auth/register" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-white text-forest-deep font-semibold hover:bg-forest-light hover:text-white transition-all group/btn">
               Als Partner werden
               <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -37,10 +38,10 @@ const SupplierCTA = () => (
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               Demo buchen und Plattform kostenlos testen.
             </p>
-            <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-cta text-white font-semibold hover:bg-forest transition-all shadow-cta group/btn">
+            <Link to="/auth/register" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-cta text-white font-semibold hover:bg-forest transition-all shadow-cta group/btn">
               Demo vereinbaren
               <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
